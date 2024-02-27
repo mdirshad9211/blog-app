@@ -8,7 +8,7 @@ import {useDispatch,useSelector } from "react-redux";
 
 export default function Signin() {
   const [formData,setFormData] = useState({});
-  const {loading, error:errorMessage} = useSelector((state) => state.user);
+  const {loading, error:errorMessage} = useSelector(state => state.user);
   const navigate = useNavigate();
   const dispatch = useDispatch();
   
