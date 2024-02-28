@@ -28,8 +28,7 @@ export default function Signin() {
       return dispatch(signInFailure('Please Fill all the fields.'));
     }
     try {
-      // setLoading(true);
-      // setErrorMessage(null);
+      
       dispatch(signInStart());
       const res = await fetch('/api/auth/signin', {
         method: 'POST',
